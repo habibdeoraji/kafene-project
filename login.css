@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400&display=swap");
 
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #F6F7FB;
-
 }
 
 header {
@@ -28,7 +27,7 @@ header {
 }
 
 nav {
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 #logo-wrapper {
@@ -47,19 +46,21 @@ nav {
     letter-spacing: -1px;
     font-weight: 500;
     margin: 0;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(0, 0, 0, 0.8);
 }
-
 
 .topbar-menu {
     display: inline-block;
     text-decoration: none;
-    color: rgba(0, 0, 0, .8);
-    padding: 24px 0 16px;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 14px 0 16px;
     font-size: 14px;
-    font-weight: 500;
-    letter-spacing: .6px;
+    font-weight: 450;
+    letter-spacing: 0.6px;
     margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    margin-top: 12px;
+    padding-bottom: 17px;
 }
 
 
