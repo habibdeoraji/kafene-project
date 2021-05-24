@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./user.css">
+    <script src="./user.js"></script>
+    <title>Kafene Project</title>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div id="logo-wrapper">
+                <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo">
+                <p>Kafene</p>
+            </div>
+            <nav>
+                <a class="topbar-menu" href="./order.html">Orders</a>
+                <a class="topbar-menu" href="./product.html">Products</a>
+                <a class="topbar-menu" href="./user.html">Users</a>
+            </nav>
+        </div>
+        <div>
+            <p id="logout-btn">Logout</p>
+            <p id="login-btn">Login</p>
+        </div>
+    </header>
+    <h1 id="user-heading">Users</h1>
+
+    <div id="main-container">
+        <div id="first-container">
+            <form id="search-form">
+                <input type="text" id="search-user" placeholder="Search by Name" value="">
+                <input type="reset" id="reset-btn" name="reset" placeholder="Reset">
+            </form>
+
+        </div>
+        <div id="second-container">
+            <div id="user-data-card">
+                <p class="user-id">ID</p>
+                <p>User Avatar</p>
+                <p>Full Name</p>
+                <p>DoB</p>
+                <p>Gender</p>
+                <p>Current Location</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
