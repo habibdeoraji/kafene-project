@@ -7,12 +7,35 @@ $(function () {
     $.get(
       "https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders",
       function (orders) {
-        var ord = orders;
-        console.log(ord);
+        var ordersArray = orders;
+        $("#current-count").text(ordersArray.length);
+
         for (var order of orders) {
-          //   console.log(order);
           generateOrderCard(order);
         }
+        // filter orders
+        var checkedArray = ordersArray;
+        $(".filter").change(function (elem) {
+          $(".customer-card").hide();
+
+          if (!elem.target.checked) {
+            checkedArray = checkedArray.filter(function (element) {
+              return element.orderStatus !== elem.target.name;
+            });
+          } else {
+            var newCheckedArray = ordersArray.filter(function (el) {
+              return el.orderStatus === elem.target.name;
+            });
+            checkedArray = checkedArray.concat(newCheckedArray);
+          }
+
+          $("#current-count").text(checkedArray.length);
+
+          for (var order of checkedArray) {
+            generateOrderCard(order);
+          }
+          console.log(checkedArray);
+        });
       }
     );
 
@@ -58,4 +81,6 @@ $(function () {
     console.log("Login clicked");
     location.assign("./login.html");
   });
+
+
 });

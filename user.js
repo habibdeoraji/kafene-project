@@ -94,4 +94,9 @@ $(function () {
   $("#reset-btn").click(function (e) {
     location.reload();
   });
+
+  // Active Class in nav menu
+
+  $('.topbar-menu').removeClass("active");
+  $('.users').addClass("topbar-menu users active")
 });

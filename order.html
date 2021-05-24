@@ -19,9 +19,9 @@
                 <p>Kafene</p>
             </div>
             <nav>
-                <a class="topbar-menu" href="./order.html">Orders</a>
-                <a class="topbar-menu" href="./product.html">Products</a>
-                <a class="topbar-menu" href="./user.html">Users</a>
+                <a class="topbar-menu orders active" href="./order.html">Orders</a>
+                <a class="topbar-menu products" href="./product.html">Products</a>
+                <a class="topbar-menu users" href="./user.html">Users</a>
             </nav>
         </div>
         <div>
@@ -33,8 +33,22 @@
 
     <div id="main-container">
         <div id="left-side">
-            <h3>Filters</h2>
-                <p>Counts: <span>0</span> </p>
+            <h2>Filters</h2>
+            <p>Counts: <span id="current-count">0</span> </p>
+            <div class="filter">
+                <label>
+                    <input type="checkbox" name="New" class="order-filter" checked>New
+                </label>
+                <label>
+                    <input type="checkbox" name="Packed" class="order-filter" checked>Packed
+                </label>
+                <label>
+                    <input type="checkbox" name="InTransit" class="order-filter" checked>InTransit
+                </label>
+                <label>
+                    <input type="checkbox" name="Delivered" class="order-filter" checked>Delivered
+                </label>
+            </div>
         </div>
         <div id="right-container">
             <div id="right-side">
